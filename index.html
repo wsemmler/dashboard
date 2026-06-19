@@ -1,59 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketing Campaign Analyst Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .frame-wrapper {
-            margin: 20px 0;
-            border: 2px solid #333;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-            display: block;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Campaign Analyst Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .frame-wrapper {
+      margin: 20px 0;
+      border: 2px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    video,
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    h1, h2, h3 {
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
+<div class="container">
 
-    <div class="container">
-        <h1>Marketing Campaign Analyst Dashboard</h1>
-        <p><strong>Note:</strong> This dashboard is built entirely using mock dummy data. The resulting generic numbers are for illustrative purposes only and do not represent any specific company case.</p>
-        <div class="video-wrapper" style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
-            <video width="100%" height="auto" controls>
-                <source src="excel.mov" type="video/quicktime">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="frame-wrapper">
-            <img src="excel.png" alt="Embedded Image Example"; style="width:100%; height:auto; object-fit:contain;">
-        </div>
-        <p> 
-            <h3>Card</h3>
-            Conversion Rate: Explain how much person who clicked Ad and complete a web activity.<br>
-            Click Through Rate: Explain how much person who clicked Ad after seeing it.<br>
-            CPA: Explain how much advertisers pay for each conversion.<br>
-            CPC: Explain how much advertisers pay for each click.
-            <h3>Analysis</h3>
-            Demographic Performance: Breaks down target audience metrics by Age group distributions.<br>
-            Web Traffic: Compares Website Visits and Social Shares against Time On Site.<br>
-            AdSpend vs Profit: A timeline tracking relation between advertising costs and actual profit generated.
-        </p>
+  <!-- NAV PILLS -->
+  <ul class="nav nav-pills mb-3" id="dashboard-tabs" role="tablist">
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active"
+        id="excel-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#excel-content"
+        type="button"
+        role="tab">
+        Excel
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link"
+        id="powerbi-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#powerbi-content"
+        type="button"
+        role="tab">
+        Power BI
+      </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link"
+        id="tableau-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#tableau-content"
+        type="button"
+        role="tab">
+        Tableau
+      </button>
+    </li>
+
+  </ul>
+
+  <!-- TAB CONTENT -->
+  <div class="tab-content" id="dashboard-tabs-content">
+
+    <!-- EXCEL TAB -->
+    <div class="tab-pane fade show active" id="excel-content" role="tabpanel">
+
+      <h1>Marketing Campaign Analyst Dashboard</h1>
+
+      <p>
+        <strong>Note:</strong> This dashboard is built entirely using mock dummy data.
+        The results are for illustrative purposes only.
+      </p>
+
+      <!-- VIDEO -->
+      <div class="frame-wrapper">
+        <video controls>
+          <source src="excel.mov" type="video/quicktime">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="frame-wrapper">
+        <img src="excel.png" alt="Excel Dashboard">
+      </div>
+
+      <!-- EXPLANATION -->
+      <h3>Card</h3>
+      Conversion Rate: Percentage of users who clicked and completed an action.<br>
+      Click Through Rate: Percentage of users who clicked after seeing an ad.<br>
+      CPA: Cost per acquisition for each conversion.<br>
+      CPC: Cost per click for each ad interaction.
+
+      <h3>Analysis</h3>
+      Demographic Performance: Breakdown by age groups.<br>
+      Web Traffic: Website visits vs social shares over time.<br>
+      AdSpend vs Profit: Relationship between marketing spend and profit.
+
     </div>
+
+    <!-- POWER BI TAB -->
+    <div class="tab-pane fade text-center" id="powerbi-content" role="tabpanel">
+      <h2>Power BI</h2>
+      <p>coming soon...</p>
+    </div>
+
+    <!-- TABLEAU TAB -->
+    <div class="tab-pane fade text-center" id="tableau-content" role="tabpanel">
+      <h2>Tableau</h2>
+      <p>coming soon...</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
