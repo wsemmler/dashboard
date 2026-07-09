@@ -122,9 +122,97 @@
     </div>
 
     <!-- POWER BI TAB -->
-    <div class="tab-pane fade text-center" id="powerbi-content" role="tabpanel">
-      <h2>Power BI</h2>
-      <p>coming soon...</p>
+    <div class="tab-pane fade show active" id="powerbi-content" role="tabpanel">
+      
+      <h1>Sales Analyst Dashboard</h1>
+
+      <p>
+        <strong>Note:</strong> This dashboard is built entirely using open Kaggle  data. The resulting generic numbers are for illustrative purposes only and do not represent any specific company case.
+      </p>
+      <p>
+        Due to power bi sharing organization limitation, check video below to see how interactive filters works<br>
+      </p>
+      
+      <!-- IMAGE -->
+      <div class="frame-wrapper">
+        <img src="model.png" alt="Excel Dashboard">
+      </div>
+
+      <!-- EXPLANATION -->
+      <h3>Table Connections & Relationships</h3>
+
+      <p>
+        Calendar connects to marketing_performance & orders<br>
+        Shared Key: Date / Time fields.
+      </p>
+
+      <p>
+        customers connects to orders<br>
+        Shared Key: customer_unique_id.
+      </p>
+
+      <p>
+        marketing_campaigns connects to marketing_performance & orders<br>
+        Shared Key: channel / marketing_channel.
+      </p>
+
+      <p>
+        brands connects to products<br>
+        Shared Key: brand_id.
+      </p>
+
+      <p>
+        products connects to order_items<br>
+        Shared Key: product_id.
+      </p>
+      
+      <p>
+        orders connects to order_payments, order_reviews & order_items<br>
+        Shared Key: order_id.
+      </p>
+
+      <!-- VIDEO -->
+      <div class="frame-wrapper">
+        <video controls>
+          <source src="marketing.mov" type="video/quicktime">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- EXPLANATION -->
+      <h3>Top-Row KPI Cards</h3>
+      Customer Acquisition Cost (CAC) [€17.59]: The structural spending threshold required to win a single unique customer.<br>
+      Return on Ad Spend (ROA) [€4.75]: Financial efficiency metric proving that every €1 allocated to ads returns €4.75 in top-line revenue.<br>
+      Click-Through Rate (CTR) [0.40%]: Top-of-funnel indicator analyzing consumer engagement with creative assets.<br>
+      Conversion Rate (CR) [1.71%]: Bottom-of-funnel bottom line measuring clicks that turn into completed transactions.
+
+      <h3>Matrix Analysis</h3>
+      Performance Matrix (Table): Displays chronological growth across budget boundaries, order volumes, and net new customer generation.<br>
+      Spend and Target Budget (Gauge Chart): highlighting actual spend ($1.03M) exceeds the foundational target baseline ($386.16K).<br>
+      Revenue vs. Marketing Spend (Area Chart): mapping visual gap between incoming attributed revenue and outbound marketing costs.<br>
+      Clicks vs. Impression (Combo Chart): mapping raw ad views (Impressions as lines) alongside direct consumer traffic actions (Clicks as vertical bars) across historical quarterly timelines.
+
+      <div class="frame-wrapper">
+        <video controls>
+          <source src="sales.mov" type="video/quicktime">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- EXPLANATION -->
+      <h3>Top-Left KPI Cards</h3>
+      Total Sales [€104.80M]: Top-line metric summarizing gross item sales value before logistics add-ons.<br>
+      Total Revenue [€108.53M]: Absolute gross intake combining product sales and shipping fees.<br>
+      CLV [€330.06]: Customer Lifetime Value, calculating long-term gross worth per buyer.<br>
+      Shipping Fees [€3.74M]: Cumulative logistics expenses charged directly to consumers.<br>  
+      Gross_Profit_Margin [45.40%]: Financial health indicator tracking overall margin retention.<br>  
+      Avg_Order_Value [€69.37]: The baseline mean financial footprint left by an individual basket checkout.  
+      
+      <h3>Matrix Analysis</h3>
+      Count of Category by Review Score & Brand Tier (Stacked Bar Chart): Compares total feedback volumes grouped by star ratings (1–5) and split by item class.<br>
+      Sum of Payment Value by Payment Type (Donut Chart): Highlights transaction preferences.<br>
+      Total Sales and Gross Profit (Combo Chart): It contrasts raw transaction volume (green vertical columns) directly against baseline retained profits (overlaid green trend line).
+
     </div>
 
     <!-- TABLEAU TAB -->
