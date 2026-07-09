@@ -181,10 +181,22 @@
 
       <!-- EXPLANATION -->
       <h3>Top-Row KPI Cards</h3>
-      Customer Acquisition Cost (CAC) [€17.59]: The structural spending threshold required to win a single unique customer.<br>
-      Return on Ad Spend (ROA) [€4.75]: Financial efficiency metric proving that every €1 allocated to ads returns €4.75 in top-line revenue.<br>
-      Click-Through Rate (CTR) [0.40%]: Top-of-funnel indicator analyzing consumer engagement with creative assets.<br>
-      Conversion Rate (CR) [1.71%]: Bottom-of-funnel bottom line measuring clicks that turn into completed transactions.
+      <p>
+      <strong>Customer Acquisition Cost (CAC) [€17.59]:</strong> The structural spending threshold required to win a single unique customer.<br>
+      <em>CAC = DIVIDE(SUM(marketing_performance[spend]), SUM(marketing_performance[attributed_new_customers]))</em><br>
+      </p>
+      <p>
+      <strong>Return on Ad Spend (ROA) [€4.75]:</strong> Financial efficiency metric proving that every €1 allocated to ads returns €4.75 in top-line revenue.<br>
+      <em>ROAS = DIVIDE(SUM(marketing_performance[attributed_revenue]), SUM(marketing_performance[spend]))</em><br>
+      </p>
+      <p>
+      <strong>Click-Through Rate (CTR) [0.40%]:</strong> Top-of-funnel indicator analyzing consumer engagement with creative assets.<br>
+      <em>CTR = DIVIDE(SUM(marketing_performance[clicks]), SUM(marketing_performance[impressions]))</em><br>
+      </p>
+      <p>
+      <strong>Conversion Rate (CR) [1.71%]:</strong> Bottom-of-funnel bottom line measuring clicks that turn into completed transactions.
+      <em>Conversion_Rate = DIVIDE(SUM(marketing_performance[attributed_orders]), SUM(marketing_performance[clicks]))</em><br>
+      </p>
 
       <h3>Matrix Analysis</h3>
       Performance Matrix (Table): Displays chronological growth across budget boundaries, order volumes, and net new customer generation.<br>
@@ -201,12 +213,12 @@
 
       <!-- EXPLANATION -->
       <h3>Top-Left KPI Cards</h3>
-      Total Sales [€104.80M]: Top-line metric summarizing gross item sales value before logistics add-ons.<br>
-      Total Revenue [€108.53M]: Absolute gross intake combining product sales and shipping fees.<br>
-      CLV [€330.06]: Customer Lifetime Value, calculating long-term gross worth per buyer.<br>
-      Shipping Fees [€3.74M]: Cumulative logistics expenses charged directly to consumers.<br>  
-      Gross_Profit_Margin [45.40%]: Financial health indicator tracking overall margin retention.<br>  
-      Avg_Order_Value [€69.37]: The baseline mean financial footprint left by an individual basket checkout.  
+      <strong>Total Sales [€104.80M]:</strong> Top-line metric summarizing gross item sales value before logistics add-ons.<br>
+      <strong>Total Revenue [€108.53M]:</strong> Absolute gross intake combining product sales and shipping fees.<br>
+      <strong>CLV [€330.06]:</strong> Customer Lifetime Value, calculating long-term gross worth per buyer.<br>
+      <strong>Shipping Fees [€3.74M]:</strong> Cumulative logistics expenses charged directly to consumers.<br>  
+      <strong>Gross_Profit_Margin [45.40%]:</strong> Financial health indicator tracking overall margin retention.<br>  
+      <strong>Avg_Order_Value [€69.37]:</strong> The baseline mean financial footprint left by an individual basket checkout.  
       
       <h3>Matrix Analysis</h3>
       Count of Category by Review Score & Brand Tier (Stacked Bar Chart): Compares total feedback volumes grouped by star ratings (1–5) and split by item class.<br>
